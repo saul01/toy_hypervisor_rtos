@@ -1,3 +1,16 @@
+# Build outputs
+build/
 bin/
+
+# Object files
 *.o
+
+# Archives
 *.zip
+*.tar
+*.tar.gz
+
+# Editor / OS junk
+.DS_Store
+*.swp
+*.swo
