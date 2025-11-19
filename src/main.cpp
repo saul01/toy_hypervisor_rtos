@@ -1,5 +1,5 @@
-#include "hypervisor.hpp"
-#include "rtos.hpp"
+#include "hypervisor/hypervisor.hpp"
+#include "rtos/rtos.hpp"
 #include <iostream>
 #include <chrono>
 #include <thread>
@@ -11,7 +11,8 @@ int main() {
     PartitionConfig p1{1, 30, 1024*1024, "guest-A"};
     PartitionConfig p2{2, 20, 1024*1024, "guest-B"};
 
-    // Entry function for partition: builds its RTOS and tasks
+    // Define variable entry:
+    // lambda function for partition: builds its RTOS and tasks
     auto entry = [&hv](int pid) {
         ToyRTOS rtos(&hv, pid);
 
