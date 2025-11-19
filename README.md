@@ -1,7 +1,7 @@
 # Toy Hypervisor + Toy RTOS
 
-Educational toy repository that simulates a hypervisor and a real-time OS (RTOS) in user-space.
-Designed for learning and interview prep — **not** a real hypervisor.
+Simulates a hypervisor and a real-time OS (RTOS) in user-space.
+Designed for learning — **not** a real hypervisor.
 
 ## Features
 - Toy hypervisor that manages multiple *partitions* (guests) and dynamically assigns CPU quotas.
@@ -30,6 +30,6 @@ make
 
 ## Notes
 This repo is intentionally small and well-documented. Use it to:
-- Talk through OS/hypervisor design in interviews.
+- Talk through OS/hypervisor.
 - Modify schedulers, memory policies, and verification (e.g., simple assertions).
 
